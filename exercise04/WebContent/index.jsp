@@ -5,16 +5,16 @@
 
 <html:html xhtml="true">
 
-<head>
-	<title><bean:message key="ex.indexpage.title"/></title>
-	<html:base/>
-</head>
-
-<body background="images/layout1.jpg">
-	<br/><br/><br/><br/><br/>
-    <div align="center">
-    	<html:link page="/showCustomerSearchForm.do"><h2><bean:message key="indexpage.linktext"/></h2></html:link>
-    </div>
-</body>
+	<head>
+		<title><bean:message key="ex.indexpage.title"/></title>
+		<html:base/>
+	</head>
+	
+	<body background="images/layout1.jpg">
+		<br/><br/><br/><br/><br/>
+	    <div align="center">
+	    	<html:link page="/showCustomerSearchForm.do"><h2><bean:message key="indexpage.linktext"/></h2></html:link>
+	    </div>
+	</body>
 
 </html:html>
