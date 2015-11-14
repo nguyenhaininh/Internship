@@ -3,8 +3,8 @@ package struts.ex4.exception;
 import java.io.Serializable;
 
 /**
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  *
  * To change the template for this generated type comment go to
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments

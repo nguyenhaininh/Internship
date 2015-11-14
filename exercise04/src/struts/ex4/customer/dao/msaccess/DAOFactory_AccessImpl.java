@@ -6,8 +6,8 @@ import struts.ex4.customer.dao.DAOFactory;
 /**
  * This is a implementation of Factory Method
  * 
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class DAOFactory_AccessImpl extends DAOFactory 
 {

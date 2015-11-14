@@ -25,8 +25,8 @@ import struts.ex4.exception.ErrorLevel;
  * A DAO abstract the mechanisms of accessing and manipulating 
  * a persistence store such as database 
  * 
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class CustomerDAO_AccessImpl implements CustomerDAO
 {

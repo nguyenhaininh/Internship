@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 /**
  *
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 @SuppressWarnings("serial")
 public class CustomerSummaryObject implements Serializable 

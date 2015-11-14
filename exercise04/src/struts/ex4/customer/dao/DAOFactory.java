@@ -5,8 +5,8 @@ import struts.ex4.customer.dao.mysql.DAOFactory_MySQLImpl;
 
 /**
  * This is a implementation of Abstract Factory
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public abstract class DAOFactory 
 {

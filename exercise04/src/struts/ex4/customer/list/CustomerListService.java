@@ -19,8 +19,8 @@ import struts.ex4.exception.ErrorLevel;
  * Seperating will prevent mingling of this stateful session faceade with 
  * otherwise stateless nature of CustomerControllerService
  * 
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class CustomerListService 
 {

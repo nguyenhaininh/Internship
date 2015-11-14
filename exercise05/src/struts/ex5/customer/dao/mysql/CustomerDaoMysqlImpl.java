@@ -23,6 +23,8 @@ import java.util.List;
  * CustomerDAO encapsulates data access and manipulation It represents the Data
  * Access Object (DAO) Pattern. A DAO abstract the mechanisms of accessing and
  * manipulating a persistence store such as database
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class CustomerDaoMysqlImpl implements ICustomerDao {
 

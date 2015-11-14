@@ -20,7 +20,7 @@ import org.apache.struts.util.LabelValueBean;
  * name "struts.example.states"
  *
  * @author Srikanth Shenoy
- * @version $Revision:   $ $Date:   $
+ * @version $Revision: $ $Date: $
  */
 public class ApplicationScopelnit implements ServletContextListener 
 {

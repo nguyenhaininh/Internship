@@ -13,8 +13,8 @@ import struts.ex4.exception.ErrorLevel;
  * In real projects, CustomerControllerService object is often implemented as Session EJB.
  * It represents a Business Service and is Session Facade pattern (Core J2EE Patterns) 
  * 
- * @author NinhNH
- * @version $Date: 11/11/2015
+* @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class CustomerControllerService 
 {

@@ -14,8 +14,8 @@ import org.apache.struts.util.MessageResources;
  * CustomerForm is the object representation of the html form for entering 
  * customer's first and last name in Struts.
  *
- * @author NinhNH
- * @version $Date:11/8/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class CustomerForm extends ActionForm 
 {

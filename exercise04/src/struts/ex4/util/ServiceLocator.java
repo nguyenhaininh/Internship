@@ -1,7 +1,7 @@
 package struts.ex4.util;
 /**
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class ServiceLocator 
 {

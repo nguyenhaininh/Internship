@@ -4,8 +4,8 @@ import struts.ex4.customer.CustomerDetailObject;
 import struts.ex4.customer.list.CustomerSummaryObject;
 
 /**
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public interface CustomerDAO 
 {

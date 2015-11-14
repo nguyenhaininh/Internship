@@ -11,8 +11,8 @@ import org.apache.struts.action.ActionMapping;
 /**
  * CustomerAction handles all form submission requests for CustomerForm.
  *
- * @author NinhNH
- * @version $Revision:   $ $Date: 11/8/2015  $
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class CustomerAction extends Action 
 {

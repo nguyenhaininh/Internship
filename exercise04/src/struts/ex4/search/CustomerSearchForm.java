@@ -7,8 +7,8 @@ import org.apache.struts.util.ImageButtonBean;
  * CustomerSearchForm is the object representation of the html form for entering 
  * customer search parameters.
  *
-  * @author NinhNH
- * @version 11/0112015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 @SuppressWarnings("serial")
 public class CustomerSearchForm extends ActionForm 

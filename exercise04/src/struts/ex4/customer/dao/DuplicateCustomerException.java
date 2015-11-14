@@ -5,8 +5,8 @@ import struts.ex4.exception.LightweightBaseException;
 
 /**
  *
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 @SuppressWarnings("serial")
 public class DuplicateCustomerException extends LightweightBaseException 

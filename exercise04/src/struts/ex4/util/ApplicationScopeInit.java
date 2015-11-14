@@ -21,8 +21,8 @@ import org.apache.struts.util.LabelValueBean;
  * In this case, it reads the states.properties and puts it in applicationscope with the
  * name "struts.example.states"
  *
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class ApplicationScopeInit implements ServletContextListener 
 {

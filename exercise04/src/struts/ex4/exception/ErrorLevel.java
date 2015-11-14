@@ -2,8 +2,8 @@ package struts.ex4.exception;
 
 /**
  * 
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class ErrorLevel 
 {

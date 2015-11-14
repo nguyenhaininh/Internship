@@ -9,8 +9,8 @@ import java.io.Serializable;
  * JSPs can use nested properties to display the objects
  * That way the ActionForms need not be flat anymore 
  *
- * @author NinhNH
- * @version $Date: 11/11/2015
+* @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 @SuppressWarnings("serial")
 public class Address implements Serializable 

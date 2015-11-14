@@ -5,8 +5,8 @@ import struts.ex4.customer.dao.DuplicateCustomerException;
 
 /**
  *
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  */
 public class CustomerDelegate 
 {

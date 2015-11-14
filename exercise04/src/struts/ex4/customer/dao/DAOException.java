@@ -6,8 +6,8 @@ import struts.ex4.exception.BaseException;
 import struts.ex4.exception.ErrorLevel;
 
 /**
- * @author NinhNH
- * @version 11/11/2015
+ * @author Srikanth Shenoy
+ * @version $Revision: $ $Date: $
  * To change the template for this generated type comment go to
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
