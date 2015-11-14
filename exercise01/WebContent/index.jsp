@@ -10,7 +10,7 @@
 	<html:base/>
 </head>
 
-<body background="images/donglua.jpg">
+<body background="images/layout1.jpg">
 	<p/><p/><p/><p/><p/>
     <div align="center">
     	<html:link page="/CustomerForm.jsp">Go to Customer Form</html:link>

@@ -7,7 +7,7 @@
 <html:html xhtml="true">
 	<head>
 		<title>
-			<bean:message key="exercise01.successpage.title" />
+			<bean:message key="successpage.title" />
         </title>
         <html:base/>
 	</head>
@@ -19,7 +19,7 @@
         	<bean:message key="prompt.customer.lastname" />: <c:out value='${CustomerForm.lastName}' />
         </h2>
         
-        <h3><bean:message key="exercise01.successpage.message" /></h3>
+        <h3><bean:message key="successpage.message" /></h3>
 		<html-el:img src="images/ninh.jpg" altKey="image.congra.alttext" bundle = "bundle.image"/>
     	<p/><p/>
     	

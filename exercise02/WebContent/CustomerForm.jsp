@@ -8,7 +8,6 @@
 <head>
 	<title><bean:message key="ex.formpage.title"/></title>
 	<html:base/>
-	<link rel="stylesheet" href="css/struts-training.css" charset="ISO-8859-1" type="text/css"/>
 </head>
 
 <body background="images/layout1.jpg">
