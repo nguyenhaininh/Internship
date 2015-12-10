@@ -1,0 +1,98 @@
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+    <form-beans>
+
+        <form-bean name="CustomerSearchForm"
+            type="struts.ex10.search.CustomerSearchForm" />
+        <form-bean name="ManageCustomersForm"
+            type="struts.ex10.search.ManageCustomersForm" />
+        <form-bean name="CustomerForm" type="struts.ex10.CustomerForm" />
+
+    </form-beans>
+    <global-exceptions>
+
+        <exception type="struts.ex10.customer.CustomerServiceException"
+            path="dberror.page" key="error.database.customer.save" />
+
+        <exception
+            type="struts.ex10.customer.list.CustomerListServiceException"
+            path="dberror.page" key="error.database.fetch.customersummary" />
+
+    </global-exceptions>
+    
+    <global-forwards>
+
+        <forward name="mainpage" path="/index.jsp" />
+		
+		<forward name="gotoXYZModule" path="/switch.do?page=/page1.do&amp;prefix=/xyz" />
+
+    </global-forwards>
+
+    <action-mappings>
+		
+		<action path="/switch"
+				type="org.apache.struts.actions.SwitchAction"/>
+        <action path="/showCustomerSearchForm" parameter="search.page"
+            type="org.apache.struts.actions.ForwardAction" />
+
+        <action path="/submitCustomerSearchForm"
+        	type="struts.ex10.search.CustomerSearchAction"
+            name="CustomerSearchForm"
+            scope="session"
+            validate="true"
+            input="search.page">
+            <forward name="success" path="search.page" />
+        </action>
+
+        <action path="/manageCustomerList"
+            type="struts.ex10.search.ManageCustomersAction" 
+            name="ManageCustomersForm"
+            scope="request" 
+            validate="true" 
+            input="/customer.page">
+            <forward name="deleteSuccess" path="/submitCustomerSearchForm.do" /> <!-- Regular Action Chaining -->
+            <forward name="add" path="/showCustomerForm.do?action=Create" /> <!-- Action Chaining with parameter passing -->
+        </action>
+
+        <action path="/showCustomerForm" 
+        	parameter="action"
+            type="struts.ex10.ShowCustomerAction" 
+            scope="request">
+            <forward name="customerFormPage" path="customer.page" />
+        </action>
+
+        <action path="/submitCustomerForm" 
+        	type="struts.example.CustomerAction"
+            name="CustomerForm" 
+            scope="request" 
+            validate="true"
+            input="custommer.page">
+		    <exception key="error.database.customer.duplicate"
+		        type="struts.ex10.customer.dao.DuplicateCustomerException"
+		        handler="struts.ex10.DuplicateCustomerExceptionHandler"
+		        path="customer.page"></exception>
+		    <forward name="gotoSearchPage"
+		   path="/submitCustomerSearchForm.do?searchButton.x=2" />
+        </action>
+		<action path="/customerlist" 
+				parameter="search.page" 
+				type="org.apache.struts.actions.ForwardAction" />
+
+
+    </action-mappings>
+	<controller processorClass="org.apache.struts.tiles.TilesRequestProcessor" />
+    <message-resources parameter="struts.ex10.MessageResources"
+        null="false" />
+
+    <message-resources parameter="struts.ex10.ImageResources"
+        key="bundle.image" null="false" />
+  	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    	<set-property property="pathnames" value="/WEB-INF/validator-rules.xml,
+        	                                      /WEB-INF/validation.xml"/>
+  	</plug-in>
+  	
+  	<plug-in className="org.apache.struts.tiles.TilesPlugin" >
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		<set-property property="moduleAware" value="true"/>
+	</plug-in>
+</struts-config>
